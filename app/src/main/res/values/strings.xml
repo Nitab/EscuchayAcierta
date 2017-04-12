@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Escucha y Acierta</string>
+    <string name="menu">Menú</string>
+    <string name="juego">¿En qué mundo quieres entrar?</string>
+    <string name="disney">Mundo Disney</string>
+    <string name="animales">Mundo Animal</string>
+    <string name="musica">Mundo Musical</string>
+    <string name="pregunta1">Dale al play, y dime ¿Cuál es el animal correcto?</string>
+    <string name="siguiente">Siguiente pregunta</string>
+    <string name="toastCorrecto">¡CORRECTO BUEN TRABAJO!</string>
+    <string name="toastIncorrecto">¡uy! Quizá quieras oirlo de nuevo</string>
+    <string name="resultadooGanador">¡BIEN HAS GANADO! Si sigues practicando llegarás a ser el mejor </string>
+    <string name="resultadoPerdedor">¡Uy! no has ganado, pero siempre puedes practicar un poco más ¡ÁNIMO!</string>
+    <string name="resultado100">¡LA MEJOR PUNTUACIÓN! ¡INCREIBLE! ¡NADIE PUEDE ENGAÑAR A TUS OIDOS!</string>
+    <string name="puntos">Puntuación:</string>
+
+</resources>

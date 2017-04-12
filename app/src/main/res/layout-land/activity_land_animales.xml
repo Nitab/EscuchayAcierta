@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo_preguntas"
+        android:scaleType="centerCrop"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pregunta1"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="69dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/play"
+                android:onClick="Play"
+                android:id="@+id/btPlay"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="69dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/pause"
+                android:onClick="Pause"
+                android:id="@+id/btPause"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    >
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/aguila"
+                        android:onClick="Aguila"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.4"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/rbAguila"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/perro"
+                        android:onClick="Perro"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.3"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/rbPerro"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/gato"
+                        android:onClick="Gato"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.4"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/rbGato"
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/vaca"
+                        android:onClick="Vaca"/>
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.3"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/rbVaca"/>
+
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:onClick="Siguiente"
+                android:text="@string/siguiente"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:padding="5sp"
+                android:fontFamily="casual"
+                android:background="#5f8ec4"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginBottom="10dp"
+                android:onClick="Menu"
+                android:text="@string/menu"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:padding="5sp"
+                android:fontFamily="casual"
+                android:background="#5f8ec4"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
